@@ -1,6 +1,5 @@
 ﻿namespace Sales.Domain.Models
 {
-    
     using System.Data.Entity;
     using Common.Models;
 
@@ -8,8 +7,8 @@
     {
         public DataContext() : base("DefaultConnection")
         {
-            
         }
+
         public DbSet<Product> Products { get; set; }
     }
 }

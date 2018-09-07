@@ -5,6 +5,7 @@ using Xamarin.Forms.Xaml;
 namespace Sales
 {
     using Views;
+
     public partial class App : Application
     {
         public App()

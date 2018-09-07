@@ -165,10 +165,10 @@
             var prefix = Application.Current.Resources["UrlPrefix"].ToString();
             var controller = Application.Current.Resources["UrlProductsController"].ToString();
             var response = await this.apiService.Put(
-                url,
-                prefix,
-                controller,
-                this.Product,
+                url, 
+                prefix, 
+                controller, 
+                this.Product, 
                 this.Product.ProductId);
 
             if (!response.IsSuccess)
@@ -176,8 +176,8 @@
                 this.IsRunning = false;
                 this.IsEnabled = true;
                 await Application.Current.MainPage.DisplayAlert(
-                    Languages.Error,
-                    response.Message,
+                    Languages.Error, 
+                    response.Message, 
                     Languages.Accept);
                 return;
             }

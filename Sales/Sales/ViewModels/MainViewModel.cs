@@ -1,11 +1,11 @@
-﻿namespace Sales.ViewModels
-{
-    using GalaSoft.MvvmLight.Command;
-    using Sales.Views;
-    using System;
-    using System.Windows.Input;
-    using Xamarin.Forms;
+﻿using GalaSoft.MvvmLight.Command;
+using Sales.Views;
+using System;
+using System.Windows.Input;
+using Xamarin.Forms;
 
+namespace Sales.ViewModels
+{
     public class MainViewModel
     {
         #region View Models

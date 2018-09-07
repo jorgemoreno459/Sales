@@ -14,11 +14,14 @@
     {
         #region Attributes 
         private MediaFile file;
+
         private ApiService apiService;
-        private ImageSource imageSource;
+
         private bool isRunning;
 
         private bool isEnabled;
+
+        private ImageSource imageSource;
         #endregion
 
         #region Properties
@@ -102,7 +105,7 @@
             {
                 this.ImageSource = ImageSource.FromStream(() =>
                 {
-                    var stream = this.file.GetStream();
+                    var stream = file.GetStream();
                     return stream;
                 });
             }

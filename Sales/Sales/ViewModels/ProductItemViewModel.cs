@@ -49,9 +49,9 @@
         private async void Delete()
         {
             var answer = await Application.Current.MainPage.DisplayAlert(
-                "Confirm",
-                "Are you sure to delete this record?",
-                "Yes",
+                "Confirm", 
+                "Are you sure to delete this record?", 
+                "Yes", 
                 "No");
             if (!answer)
             {
@@ -62,8 +62,8 @@
             if (!connection.IsSuccess)
             {
                 await Application.Current.MainPage.DisplayAlert(
-                    Languages.Error,
-                    connection.Message,
+                    Languages.Error, 
+                    connection.Message, 
                     Languages.Accept);
                 return;
             }
@@ -75,8 +75,8 @@
             if (!response.IsSuccess)
             {
                 await Application.Current.MainPage.DisplayAlert(
-                    Languages.Error,
-                    response.Message,
+                    Languages.Error, 
+                    response.Message, 
                     Languages.Accept);
                 return;
             }

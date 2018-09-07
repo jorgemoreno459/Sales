@@ -8,10 +8,10 @@
     using Plugin.Permissions;
 
     [Activity(
-        Label = "Sales",
-        Icon = "@mipmap/icon",
-        Theme = "@style/MainTheme",
-        MainLauncher = true,
+        Label = "Sales", 
+        Icon = "@mipmap/icon", 
+        Theme = "@style/MainTheme", 
+        MainLauncher = true, 
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
